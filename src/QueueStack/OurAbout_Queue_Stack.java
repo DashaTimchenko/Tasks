@@ -22,7 +22,8 @@ public class OurAbout_Queue_Stack {
                 case "BACK" -> tmp.back();
                 case "SIZE" -> tmp.size();
                 case "CLEAR" -> tmp.clear();
-                default -> System.out.println( "ERROR: Unknown command!" );
+                default: System.out.println( "ERROR: Unknown command!" );
+                break;
             }
             command = in.next();
         }
