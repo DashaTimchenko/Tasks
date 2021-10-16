@@ -26,6 +26,7 @@ public class OurAbout_Queue_Stack {
             }
             command = in.next();
         }
+
         System.out.println( "Buy!" );
     }
 }
