@@ -10,34 +10,19 @@ public class OurAbout_Queue_Stack {
         String command = in.next();
         while ( !command.equalsIgnoreCase( "exit" ) ) {
             switch ( command.toUpperCase() ) {
-                case "PUSH": {
+                case "PUSH" -> {
                     try {
                         tmp.push( in.nextInt() );
                     }
                     catch ( Throwable error ) {
                         System.out.println( "ERROR: Not number!" );
                     }
-                    break;
                 }
-                case "POP": {
-                    tmp.pop();
-                    break;
-                }
-                case "BACK": {
-                    tmp.back();
-                    break;
-                }
-                case "SIZE": {
-                    tmp.size();
-                    break;
-                }
-                case "CLEAR": {
-                    tmp.clear();
-                    break;
-                }
-                default: {
-                    System.out.println( "ERROR: Unknown command!" );
-                }
+                case "POP" -> tmp.pop();
+                case "BACK" -> tmp.back();
+                case "SIZE" -> tmp.size();
+                case "CLEAR" -> tmp.clear();
+                default -> System.out.println( "ERROR: Unknown command!" );
             }
             command = in.next();
         }
