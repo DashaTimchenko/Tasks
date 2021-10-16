@@ -15,7 +15,7 @@ public class OurAbout_Queue_Stack {
                         tmp.push( in.nextInt() );
                     }
                     catch ( Throwable error ) {
-                        System.out.println( "ERROR: Not number!" );
+                        System.out.println( "ERROR" );
                     }
                 }
                 case "POP" -> tmp.pop();
