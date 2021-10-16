@@ -39,6 +39,7 @@ public class OurStack implements OurCollection
         else
             System.out.println( "we are empty!" );
 
+
     }
     
     
