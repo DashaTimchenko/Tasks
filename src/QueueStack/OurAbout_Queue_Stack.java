@@ -11,7 +11,6 @@ public class OurAbout_Queue_Stack {
         while ( !command.equalsIgnoreCase( "exit" ) ) {
             switch ( command.toUpperCase() ) {
                 case "PUSH" -> {
-                    
                     try {
                         tmp.push( in.nextInt() );
                     }
